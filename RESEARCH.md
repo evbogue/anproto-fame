@@ -1,189 +1,33 @@
-# Research Program
+# The 90-day experiment
 
-ANProto Fame is both a product project and an ongoing experiment.
+## Question
 
-The core question is:
+Which published works lead to repeat recognition, meaningful relationships and concrete opportunities, and how much effort does that require?
 
-> How can a person build internet fame that remains useful without permanent dependence on a platform or algorithm?
+## Setup
 
-## Working model
+Choose a small set of published posts, projects or collaborations. Record why each was selected, its source reference and the experiment's start and end dates. Track the cohort of people with an observed meaningful interaction during days 1–30, then follow that same cohort through day 90.
 
-A first approximation:
+A meaningful interaction is an observed reply, citation, substantive conversation, introduction or contribution. Record its context and evidence. Record later participants separately so the original cohort stays comparable.
 
-> **Sustainable Fame = durable recognition × relationship quality × portability ÷ maintenance burden**
+## Measurements
 
-This is not intended as a literal universal equation. It is a framework for deciding what to measure.
+| Measure | Record and report |
+|---|---|
+| Repeat recognition | Cohort members with another meaningful interaction by day 30 and during days 31–90. Report counts and the original cohort size. |
+| Relationships | Reciprocal conversations, introductions and shared work, linked to the people and interactions involved. |
+| Outcomes | Invitations, collaborations, contributions, paid work or other concrete opportunities, with dates and supporting evidence. |
+| Effort | Weekly minutes spent publishing the selected work, maintaining it and following up on related interactions. Record what the time covered. |
+| Source continuity | At days 30 and 90, check whether selected work remains accessible and whether its original identifiers and retained evidence remain usable. |
 
-## Variables
+Keep these measurements separate. Distinguish observed evidence, participant reports and researcher inference. Record gaps in access or observation alongside the results.
 
-### Durable recognition
+## Reviews
 
-Questions:
+At day 30, summarize the cohort, early repeat interactions, outcomes and effort. At day 90, revisit the same people and work. Describe what persisted, what led to an opportunity and what effort supported it.
 
-- Do people remember the creator after weeks or months?
-- Do they associate specific ideas, projects, or expertise with that person?
-- Can they find the creator again without relying on the original platform?
-- Does recognition transfer between online and offline settings?
+An outcome may have several contributing works or relationships. Give it one ledger entry and link those contributors. Record the strength of the connection using the evidence available.
 
-Possible signals:
+Finish with one practical decision for the next experiment: which work or follow-up practice to repeat, and why.
 
-- branded search
-- direct traffic
-- repeat visitors
-- direct mentions
-- citations
-- invitations
-- returning commenters
-- repeat event attendance
-
-### Relationship quality
-
-Questions:
-
-- Who repeatedly interacts?
-- Who introduces the creator to other people?
-- Who collaborates?
-- Who cites or recommends their work?
-- Which weak ties become strong ties?
-
-Possible signals:
-
-- repeat interactions
-- reciprocal communication
-- introductions
-- collaborations
-- invitations
-- endorsements
-- shared projects
-- offline meetings
-
-### Portability
-
-Questions:
-
-- How much of the audience can still be reached after leaving a platform?
-- How much reputation survives account deletion or platform decline?
-- Does content retain canonical attribution outside its original network?
-
-Possible signals:
-
-- direct subscribers
-- web/RSS subscribers
-- known identity mappings
-- cross-platform recognition
-- canonical backlinks
-- exported relationship graph coverage
-
-### Maintenance burden
-
-Questions:
-
-- How many hours per week are needed to maintain visibility?
-- How much content must be produced?
-- How many platforms require manual attention?
-- How much emotional attention is required?
-
-Possible signals:
-
-- hours spent
-- number of manual publishing actions
-- number of platform-specific edits
-- posting frequency
-- response burden
-- percentage of work automated
-
-## Initial hypotheses
-
-### H1 — Canonical publishing improves resilience
-
-Publishing canonical versions on creator-owned infrastructure should make content easier to rediscover and migrate.
-
-### H2 — Repeated recognition matters more than impressions
-
-A smaller group of people who repeatedly encounter a creator may produce more durable influence than a large number of one-time impressions.
-
-### H3 — Cross-context recognition predicts durable fame
-
-Recognition across multiple contexts—web, events, social networks, projects, search—should be more robust than recognition confined to a single feed.
-
-### H4 — Relationship memory compounds
-
-Remembering prior interactions, introductions, and collaborations should improve the creator's ability to turn attention into durable relationships.
-
-### H5 — Repurposing can lower maintenance burden
-
-AI-assisted adaptation of canonical material should allow a creator to remain visible across multiple channels without proportionally increasing labor.
-
-### H6 — Provenance increases long-term attribution
-
-Verifiable canonical references may help attribution survive copying and remixing.
-
-## Experiment format
-
-Each experiment should specify:
-
-```text
-question
-hypothesis
-intervention
-time period
-signals
-result
-unexpected effects
-next experiment
-```
-
-Experiments should prefer behavior and outcomes over vanity metrics.
-
-## Candidate experiments
-
-### Publish once, syndicate everywhere
-
-Publish one canonical object and distribute adapted versions to several networks.
-
-Measure:
-
-- time spent
-- traffic returning to canonical source
-- cross-platform engagement
-- repeat recognition
-
-### Recognition cohort
-
-Track the same people over several months.
-
-Measure whether they:
-
-- return
-- cite
-- invite
-- collaborate
-- introduce
-- move from online contact to real-world relationship
-
-### Event-to-network conversion
-
-For talks, meetups, and appearances:
-
-- publish a canonical event artifact
-- record new contacts
-- track later interactions
-- measure whether offline recognition becomes durable online recognition
-
-### Archive resurfacing
-
-Republish or reference older canonical work.
-
-Measure whether durable archives generate renewed attention without creating new material.
-
-### Platform exit simulation
-
-Assume one distribution platform disappears.
-
-Measure what remains:
-
-- identity
-- archive
-- audience reach
-- reputation evidence
-- relationship graph
+Use [LEDGER.md](LEDGER.md) for recording and [ROADMAP.md](ROADMAP.md) for completion steps.

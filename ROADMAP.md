@@ -1,186 +1,27 @@
-# Roadmap
+# First research milestone
 
-This roadmap prioritizes research leverage over protocol completeness.
+## 1. Start the ledger
 
-## Phase 1 — Personal fame ledger
+Fill in [LEDGER.md](LEDGER.md) with dates, a research question and a few selected works. Copy their existing Wiredove, SSB or published collaboration references. Record the initial publishing effort.
 
-Build a useful local record of public work and outcomes.
+## 2. Observe for 90 days
 
-Core objects:
+Add meaningful interactions and outcomes as they occur. Keep weekly effort totals. Establish the recognition cohort from days 1–30 and review it at days 30 and 90.
 
-- identity
-- post
-- project
-- appearance
-- collaboration
-- mention
-- endorsement
-- relationship
-- outcome
+## 3. Preserve and review
 
-Goal: answer "what have I put into the world, who encountered it, and what happened afterward?"
+Export the ledger and retained evidence to a dated directory. Open the copy independently and check its references. Write a short research report covering repeat recognition, relationships, outcomes, effort and source continuity.
 
-## Phase 2 — Canonical publishing
+## Completion
 
-Create durable canonical pages for important public artifacts.
+The milestone is complete when the ledger contains:
 
-Features:
+- selected works with original source references;
+- dated observations and a defined cohort;
+- weekly effort records;
+- day-30 and day-90 reviews;
+- evidenced outcomes and attribution notes;
+- a checked export;
+- one decision for the next experiment.
 
-- stable URLs
-- structured metadata
-- authorship/provenance
-- references between artifacts
-- RSS/Atom
-- lightweight export
-- optional ANProto signatures
-
-Goal: make the creator's own archive the source of truth.
-
-## Phase 3 — POSSE distribution
-
-Publish on owned infrastructure, syndicate elsewhere.
-
-Initial targets should be chosen by actual creator workflow rather than protocol ideology.
-
-Capabilities:
-
-- platform-specific formatting
-- backlinks to canonical source
-- publication status
-- attribution tracking
-- manual and automated syndication
-
-Goal: one publishing act can create several distribution surfaces.
-
-## Phase 4 — Audience graph
-
-Move beyond follower counts.
-
-Track:
-
-- repeated engagement
-- mentions
-- citations
-- invitations
-- introductions
-- collaborations
-- attendance
-- direct communication
-- platform overlap
-
-Goal: identify who constitutes the durable audience.
-
-## Phase 5 — Relationship memory
-
-Add a lightweight creator CRM.
-
-Features:
-
-- people
-- context of meeting
-- past interactions
-- shared projects
-- introductions
-- last contact
-- relevant artifacts
-- next plausible collaboration
-
-Goal: turn recognition into durable human relationships.
-
-## Phase 6 — Influence analytics
-
-Build metrics around the research model.
-
-Dashboards should emphasize:
-
-- repeat recognition
-- relationship depth
-- cross-platform persistence
-- canonical traffic
-- downstream citations
-- invitations/collaborations
-- maintenance time
-
-Avoid building a single "fame score."
-
-## Phase 7 — Reputation evidence
-
-Represent public evidence of reputation.
-
-Examples:
-
-- talks
-- press
-- projects
-- endorsements
-- collaborations
-- references
-- citations
-- community roles
-
-Where useful, evidence can be signed or independently verifiable.
-
-Goal: reputation should be portable without becoming centrally ranked.
-
-## Phase 8 — AI publishing assistant
-
-Use AI to lower maintenance burden.
-
-Capabilities:
-
-- derive short posts from canonical work
-- produce platform-specific variants
-- create summaries
-- identify resurfacing opportunities
-- propose clips from audio/video
-- preserve canonical links and provenance
-
-Goal: maintain visibility without turning the creator into a full-time content operator.
-
-## Phase 9 — Media provenance
-
-Extend canonical artifacts to:
-
-- images
-- audio
-- video
-- talks
-- transcripts
-- clips
-- remixes
-
-Experiment with signed manifests and durable source references.
-
-## Phase 10 — Protocol experiments
-
-Only after the product loops are useful.
-
-Evaluate where ANProto adds real value:
-
-- portable identity
-- signatures
-- provenance
-- relationship attestations
-- canonical object references
-
-Evaluate where SSB or other protocols add real value:
-
-- replication
-- offline access
-- peer-to-peer archival
-- social data ownership
-
-Do not rebuild infrastructure merely for parity.
-
-## First implementation milestone
-
-A creator should be able to:
-
-1. create a canonical identity
-2. publish a canonical artifact
-3. syndicate it outward
-4. record who meaningfully interacted
-5. associate later opportunities with that artifact
-6. see how much work the process required
-
-If that loop is useful, the project has a foundation.
+Use the completed experiment to choose the next small improvement to the recording workflow.

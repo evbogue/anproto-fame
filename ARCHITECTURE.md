@@ -1,203 +1,42 @@
-# Architecture
+# Ledger structure
 
-## Product layers
-
-```text
-             ANProto Fame
-       research + product model
-                 |
-              Wiredove
-   publishing / audience / CRM / analytics
-                 |
-      +----------+----------+
-      |          |          |
-     Web       ANProto     SSB
- canonical   signatures   optional
- publishing  provenance   replication
-      |
-   external platforms
- distribution channels
-```
-
-## Design rule
-
-The product model must not depend on any one transport or social protocol.
-
-A canonical artifact should remain meaningful if it is:
-
-- served over HTTP
-- stored in Git
-- signed with ANProto
-- replicated through SSB
-- exported as JSON
-- syndicated to a social platform
-
-## Canonical objects
-
-The application should converge on a small set of interoperable objects.
-
-### Identity
-
-Represents the durable creator identity.
-
-May reference:
-
-- domains
-- cryptographic keys
-- social accounts
-- public profiles
-- projects
-
-### Artifact
-
-Something intentionally published.
-
-Examples:
-
-- post
-- essay
-- image
-- video
-- audio
-- talk
-- project
-- release
-
-Suggested fields:
+The ledger is a local Markdown file connecting published work to observations.
 
 ```text
-id
-type
-author
-created
-canonical_url
-title
-body / media references
-references
-provenance
-distribution
+Wiredove / SSB / published Wave records
+                  |
+            source references
+                  |
+     work → interactions → outcomes
+                  |
+          effort and review notes
 ```
 
-### Interaction
+## Source references
 
-Evidence that a person or community encountered an artifact.
+Keep the original identifier, source system and an accessible URL when available. Record the author key or feed ID when known. Use a separate ledger label for convenient cross-references.
 
-Examples:
+| Source | Reference to retain |
+|---|---|
+| Wiredove | Signed-message hash and author public key; a post URL when available. |
+| SSB | Message ID and author feed ID; a viewer URL when available. |
+| Published Wave collaboration | Signed record identifier and author key, or a published URL with its source identifier when available. |
+| Project or other public work | Published URL and a release or commit identifier when relevant. |
 
-- reply
-- mention
-- citation
-- reshare
-- event attendance
-- direct message
-- conversation
+ANProto signs a timestamp plus a content hash. Wiredove's message ID hashes the signature; its content hash identifies the exact content bytes. SSB uses its own signed message and feed identifiers. Store these identifiers with their source system.
 
-### Relationship
+Use the source client's verification result when available and record its date. Mark references whose verification is pending or whose content is unavailable. Preserve the identifiers when access changes.
 
-A durable connection between people.
+## Local observations
 
-It should preserve context rather than collapse to "follow."
+Each interaction records a date, a stable local person label, the relevant work and the observed action. Outcomes link to supporting interactions where known. Record the evidence and whether the connection was reported by the person or inferred by the researcher.
 
-Examples:
+Use participant labels consistently throughout the experiment. Link accounts only when the person confirms the connection or supporting evidence establishes it. Keep that evidence in the notes.
 
-- collaborator
-- organizer
-- journalist
-- friend
-- community member
-- client
-- repeat supporter
+Relationship context and research observations stay in the creator's local ledger. Choose which entries to share when preparing a public research report.
 
-### Outcome
+## Export and recovery
 
-Something consequential that followed from attention.
+Copy the completed ledger together with any locally retained supporting evidence into a dated directory. Keep relative links to evidence files and original source identifiers in the ledger. Open the copy independently and check that entries, references and evidence remain usable.
 
-Examples:
-
-- invitation
-- collaboration
-- job
-- sale
-- press
-- introduction
-- speaking opportunity
-- project contribution
-
-This allows the system to model:
-
-```text
-artifact
-   |
-interaction
-   |
-relationship
-   |
-outcome
-```
-
-That chain is more useful for researching sustainable fame than an impression counter.
-
-## ANProto's role
-
-ANProto is useful when cryptographic authentication adds something concrete.
-
-Potential roles:
-
-- identity keys
-- artifact signatures
-- provenance
-- signed endorsements
-- verifiable references
-- portable attestations
-
-ANProto should not automatically absorb:
-
-- media transport
-- replication
-- database storage
-- recommendation algorithms
-- social graph semantics
-
-Those belong at other layers.
-
-## SSB's role
-
-SSB can be explored as an optional backend for:
-
-- offline archives
-- peer replication
-- signed social data
-- community-owned datasets
-
-The project should consume SSB capabilities where useful rather than target SSB feature parity.
-
-## Data ownership
-
-The complete user dataset must have a straightforward export representation.
-
-A useful baseline is a directory containing:
-
-```text
-identity.json
-artifacts/
-people/
-relationships/
-interactions/
-outcomes/
-media/
-```
-
-No essential user state should exist only inside an external platform API.
-
-## Local-first bias
-
-Audience intelligence and relationship memory are unusually personal datasets.
-
-Prefer:
-
-- local storage
-- explicit synchronization
-- user-owned backups
-- selective publishing
-
-over centralized collection by default.
+The starting implementation is [LEDGER.md](LEDGER.md). Its tables can be exported as CSV or represented as JSON when a later workflow needs it.
